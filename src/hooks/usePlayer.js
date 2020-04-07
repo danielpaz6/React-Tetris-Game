@@ -28,7 +28,7 @@ export const usePlayer = () => {
 		const clonedPlayer = JSON.parse(JSON.stringify(player));
 		clonedPlayer.tetromino = rotate(clonedPlayer.tetromino, dir);
 		
-		const pos = clonedPlayer.pos.x;
+		//const pos = clonedPlayer.pos.x;
 		let offset = 1;
 
 		// Back and forth movement the tetromino to check for side collition while rotating
@@ -37,7 +37,8 @@ export const usePlayer = () => {
 			offset = -(offset + (offset > 0 ? 1 : -1));
 
 			if(offset > clonedPlayer.tetromino[0].length) {
-				// Cannot rotate
+				// Cannot rotate because it will collide with something else, hence,
+				// we'll return so we won't setPlayer to the rotated tetromino.
 				return;
 			}
 		}
@@ -60,9 +61,11 @@ export const usePlayer = () => {
 				y: 0
 			},
 			tetromino: randomTetromino().shape,
+			//tetromino: TETROMINOS["I"].shape,
 			collided: false
-		})
-	}, [])
+		});
+	}, []);
+
 
 	return [player, updatePlayerPos, resetPlayer, playerRotate];
 }

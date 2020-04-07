@@ -1,18 +1,12 @@
 import styled from "styled-components";
 
 
-export const StyledTetrisWrapper = styled.div`
-	width: 100vh;
-	background-color: #fff;
-	margin: auto;
-`;
-
 export const StyledTetris = styled.div`
 	display: flex;
 	align-items: flex-start;
 	margin: auto;
 	margin-top: 15px;
-	max-width: 900px;
+	width: 630px;
 
 	aside {
 		width: 100%;

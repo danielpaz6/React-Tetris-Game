@@ -13,6 +13,7 @@ export const useStage = (player, resetPlayer) => {
 				// If true, we haven't found a value of zero.
 				// Therefore it's a full row and it should be cleared.
 				if(row.findIndex(cell => cell[0] === 0) === -1) {
+					//console.log("Activate findIndex Reduce", row, accumilator);
 					setRowsCleared(prev => prev + 1);
 
 					// The accumilator is the new array we building up inside the reduce function.
@@ -59,5 +60,5 @@ export const useStage = (player, resetPlayer) => {
 
 	}, [player, resetPlayer]);
 
-	return [stage, setStage];
+	return [stage, setStage, rowsCleared];
 }
