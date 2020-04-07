@@ -3,8 +3,29 @@ import { createStage } from "../utils/gameHelpers";
 
 export const useStage = (player, resetPlayer) => {
 	const [stage, setStage] = useState(createStage());
+	const [rowsCleared, setRowsCleared] = useState(0);
 
 	useEffect(() => {
+		setRowsCleared(0);
+
+		const sweepRows = newStage =>
+			newStage.reduce((accumilator, row) => {
+				// If true, we haven't found a value of zero.
+				// Therefore it's a full row and it should be cleared.
+				if(row.findIndex(cell => cell[0] === 0) === -1) {
+					setRowsCleared(prev => prev + 1);
+
+					// The accumilator is the new array we building up inside the reduce function.
+					// unshift function let us add a new value to the array at the beginning of the array
+					// that's what will create the illusion of pushing the game down
+					accumilator.unshift(new Array(newStage[0].length).fill([0, 'clear']));
+				}
+				else
+					accumilator.push(row)
+
+				return accumilator;
+			}, []);
+
 		const updateStage = prevStage => {
 			// First flush the stage
 			const newStage = prevStage.map(row => 
@@ -25,12 +46,18 @@ export const useStage = (player, resetPlayer) => {
 				});
 			});
 
+			// Then check if we collided
+			if(player.collided) {
+				resetPlayer();
+				return sweepRows(newStage);
+			}
+
 			return newStage;
 		};
 
 		setStage(prev => updateStage(prev));
 
-	}, [player.collided, player.pos.x, player.pos.y, player.tetromino]);
+	}, [player, resetPlayer]);
 
 	return [stage, setStage];
 }
