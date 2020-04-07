@@ -1,7 +1,7 @@
 import React from 'react';
 
 const startButton = ({ callback }) => (
-	<div>Start Game</div>
+	<button onClick={callback}>Start Game</button>
 );
 
 export default startButton;

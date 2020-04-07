@@ -1,0 +1,39 @@
+.cell_shape {
+	width: auto;
+}
+
+.shape_0 {
+	background: rgba(246, 246, 246, 1);
+	border: 0;
+	border-bottom-color: rgba(246, 246, 246, 0.1);
+	border-right-color: rgba(246, 246, 246, 1);
+	border-top-color: rgba(246, 246, 246, 1);
+	border-left-color: rgba(246, 246, 246, 0.3);
+}
+
+.shape_I {
+	background: rgba(80, 227, 230, 1);
+	border: 4px solid;
+	border-bottom-color: rgba(80, 227, 230, 0.1);
+	border-right-color: rgba(80, 227, 230, 1);
+	border-top-color: rgba(80, 227, 230, 1);
+	border-left-color: rgba(80, 227, 230, 0.3);
+}
+
+.shape_J {
+	background: rgba(36, 95, 223, 1);
+	border: 4px solid;
+	border-bottom-color: rgba(36, 95, 223, 0.1);
+	border-right-color: rgba(36, 95, 223, 1);
+	border-top-color: rgba(36, 95, 223, 1);
+	border-left-color: rgba(36, 95, 223, 0.3);
+}
+
+.shape_L {
+	background: rgba(223, 173, 36, 1);
+	border: 4px solid;
+	border-bottom-color: rgba(223, 173, 36, 0.1);
+	border-right-color: rgba(223, 173, 36, 1);
+	border-top-color: rgba(223, 173, 36, 1);
+	border-left-color: rgba(223, 173, 36, 0.3);
+}
