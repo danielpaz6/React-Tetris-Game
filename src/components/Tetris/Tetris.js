@@ -84,6 +84,8 @@ const Tetris = () => {
 				case 38: playerRotate(stage, 1); break; // Up
 				default: break;
 			}
+		} else if(keyCode == 32 && dropTime === null) {
+			handleStartGame();
 		}
 	}
 
@@ -104,9 +106,8 @@ const Tetris = () => {
 						<Card style={{ width: '18rem' }}>
 							<Card.Body>Game Over</Card.Body>
 						</Card><br />
-						<Button variant="primary" onClick={handleStartGame}>Start a new game</Button>
 					</React.Fragment>
-				) : (
+				) : null }
 				<div>
 					<Card style={{ width: '18rem' }}>
 						<Card.Header>Game Status</Card.Header>
@@ -118,7 +119,7 @@ const Tetris = () => {
 					</Card><br />
 					<Button variant="primary" onClick={handleStartGame}>Start a game</Button>
 				</div>
-				)}
+				
 			</aside>
 		</StyledTetris>
 	);
