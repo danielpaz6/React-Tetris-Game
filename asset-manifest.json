@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/React-Tetris-Game/static/css/main.e53194f1.chunk.css",
-    "main.js": "/React-Tetris-Game/static/js/main.3d4560fd.chunk.js",
-    "main.js.map": "/React-Tetris-Game/static/js/main.3d4560fd.chunk.js.map",
+    "main.js": "/React-Tetris-Game/static/js/main.b69f91f5.chunk.js",
+    "main.js.map": "/React-Tetris-Game/static/js/main.b69f91f5.chunk.js.map",
     "runtime-main.js": "/React-Tetris-Game/static/js/runtime-main.9cc6df2a.js",
     "runtime-main.js.map": "/React-Tetris-Game/static/js/runtime-main.9cc6df2a.js.map",
-    "static/js/2.25300b15.chunk.js": "/React-Tetris-Game/static/js/2.25300b15.chunk.js",
-    "static/js/2.25300b15.chunk.js.map": "/React-Tetris-Game/static/js/2.25300b15.chunk.js.map",
+    "static/js/2.e52d52f4.chunk.js": "/React-Tetris-Game/static/js/2.e52d52f4.chunk.js",
+    "static/js/2.e52d52f4.chunk.js.map": "/React-Tetris-Game/static/js/2.e52d52f4.chunk.js.map",
     "index.html": "/React-Tetris-Game/index.html",
-    "precache-manifest.dc9ab0b82281fbdf62980cd2a4528d6f.js": "/React-Tetris-Game/precache-manifest.dc9ab0b82281fbdf62980cd2a4528d6f.js",
+    "precache-manifest.ef101138347a371e323beba11665d660.js": "/React-Tetris-Game/precache-manifest.ef101138347a371e323beba11665d660.js",
     "service-worker.js": "/React-Tetris-Game/service-worker.js",
     "static/css/main.e53194f1.chunk.css.map": "/React-Tetris-Game/static/css/main.e53194f1.chunk.css.map",
-    "static/js/2.25300b15.chunk.js.LICENSE.txt": "/React-Tetris-Game/static/js/2.25300b15.chunk.js.LICENSE.txt"
+    "static/js/2.e52d52f4.chunk.js.LICENSE.txt": "/React-Tetris-Game/static/js/2.e52d52f4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9cc6df2a.js",
-    "static/js/2.25300b15.chunk.js",
+    "static/js/2.e52d52f4.chunk.js",
     "static/css/main.e53194f1.chunk.css",
-    "static/js/main.3d4560fd.chunk.js"
+    "static/js/main.b69f91f5.chunk.js"
   ]
 }
